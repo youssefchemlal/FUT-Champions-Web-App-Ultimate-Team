@@ -1,0 +1,215 @@
+header {
+    height: 100px;
+    background-color: #000000a3;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    /* margin-top: px; */
+}
+
+.button-formation {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#furst-btn-formation {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+
+}
+
+#second-btn-formation {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.stade {
+    height: 512px;
+    width: 630px;
+    background-image: url('stade.png')
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+#forward-left {
+    position: relative;
+    left: 120px;
+    top: 30px;
+}
+
+#forward-center {
+    position: relative;
+    left: 289PX;
+    top: -60px;
+
+}
+
+#forward-right {
+    position: relative;
+    left: 470px;
+    top: -128px;
+}
+
+#center-left {
+    position: relative;
+    left: 60px;
+    top: -100px;
+}
+
+#center-center {
+    position: relative;
+    left: 290PX;
+    top: -120px;
+}
+
+#center-right {
+    position: relative;
+    left: 540px;
+    top: -260px;
+}
+
+#deffence-left {
+    position: relative;
+    left: 45px;
+    top: -200px;
+}
+
+#deffence-left-center {
+    position: relative;
+    top: -200px;
+    left: 150px;
+}
+
+#deffence-right {
+    position: relative;
+    left: 560px;
+    top: -438px;
+}
+
+#deffence-right-center {
+    position: relative;
+    top: -280px;
+    left: 430px;
+}
+
+#gardien {
+    position: relative;
+    top: -390px;
+    left: 290px;
+}
+
+.player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.player-form input {
+    padding: 10px;
+
+}
+
+.player-form button {
+    padding: 10px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+
+#player-list {
+    margin-top: 20px;
+}
+
+.player-card {
+    position: relative;
+    width: 200px;
+    /* Ajustez la taille selon votre image */
+    margin-top: 20px;
+}
+
+.player-card img {
+    width: 100%;
+    /* S'adapte à la taille du conteneur */
+}
+
+.card-info {
+    position: absolute;
+    top: 50px;
+    /* Ajustez selon l'emplacement souhaité */
+    left: 30px;
+    /* Ajustez selon l'emplacement souhaité */
+    color: #000;
+    /* Couleur du texte */
+}
+
+.player-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet d'afficher plusieurs cartes sur plusieurs lignes */
+    gap: 20px;
+    /* Espace entre les cartes */
+    margin-top: 20px;
+    /* Espace au-dessus des cartes */
+}
+
+.forward img {
+    height: 40px;
+}
+
+
+body {
+    background-image: url('backrand.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.forward button {
+    height: px;
+    width: px;
+    background-color: aliceblue;
+
+}
+
+.forward {
+    width: 62.14px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.center {
+    width: 62.14px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.deffence {
+    width: 62.14px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: azure;
+}
+
+.stadeAndGamers{
+    display: flex;
+    gap: 30px;
+}
+
+.stade{
+    border-radius: 20px;
+}
