@@ -3,7 +3,6 @@ header {
     background-color: #000000a3;
     border-radius: 50px;
     margin-bottom: 10px;
-    /* margin-top: px; */
 }
 
 .button-formation {
@@ -105,7 +104,13 @@ header {
     left: 290px;
 }
 
+.input-player-to-make {
+    display: flex;
+    justify-content: center;
+}
+
 .player-form {
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -133,33 +138,25 @@ header {
 .player-card {
     position: relative;
     width: 200px;
-    /* Ajustez la taille selon votre image */
     margin-top: 20px;
 }
 
 .player-card img {
     width: 100%;
-    /* S'adapte à la taille du conteneur */
 }
 
 .card-info {
     position: absolute;
     top: 50px;
-    /* Ajustez selon l'emplacement souhaité */
     left: 30px;
-    /* Ajustez selon l'emplacement souhaité */
     color: #000;
-    /* Couleur du texte */
 }
 
 .player-cards-container {
     display: flex;
     flex-wrap: wrap;
-    /* Permet d'afficher plusieurs cartes sur plusieurs lignes */
     gap: 20px;
-    /* Espace entre les cartes */
     margin-top: 20px;
-    /* Espace au-dessus des cartes */
 }
 
 .forward img {
@@ -205,11 +202,121 @@ body {
     background-color: azure;
 }
 
-.stadeAndGamers{
+.stadeAndGamers {
     display: flex;
     gap: 30px;
 }
 
-.stade{
+.stade {
     border-radius: 20px;
 }
+
+
+/* saniti yabda  */
+
+
+
+.card-info p {
+    margin: 5px 0;
+}
+
+.card-info .cf {
+    color: blue;
+    font-weight: bold;
+}
+
+.card-info .pac {
+    color: green;
+
+.stat {
+    font-size: 7px;
+}
+
+.card-info h3{
+    font-size: 15px;
+    position: relative;
+    left: 44px;
+    top: -14px;
+}
+
+.positionPosition{
+    position: relative;
+    left: 59px;
+    font-size: 20px;
+    top: 156px;
+}
+
+.card-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagePosition{
+    width: 100px;
+    position: relative;
+    left: 20px;
+    top: -54px;
+}
+
+.stat{
+    font-weight: bold;
+}
+
+.cfPosition{
+    position: relative;
+    left: 6px;
+    top: -165px;
+    font-size: 10px;
+}
+
+.pacPosition{
+    position: relative;
+    left: -7px;
+    top: -95px;
+}
+
+.shoPosition{
+    position: relative;
+    left: 16px;
+    top: -126px;
+}
+
+.pasPosition{
+    position: relative;
+    left: 45px;
+    top: -157px;
+}
+
+.driPosition{
+    position: relative;
+    left: 75px;
+    top: -188px;
+}
+
+.defPosition{
+    position: relative;
+    left: 105px;
+    top: -219px;
+}
+
+.phyPosition{
+    position: relative;
+    left: 132px;
+    top: -250px;
+}
+
+.countryPosition{
+    width: 25px;
+    position: relative;
+    left: 90px;
+    top: -245px;
+}
+
+.clubPosition{
+    width: 25px;
+    position: relative;
+    top: -270px;
+    left: 25px;
+}
+

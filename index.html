@@ -27,48 +27,60 @@
                 <button id="furst-btn-formation">4-3-3</button>
                 <button id="second-btn-formation">4-4-2</button>
             </div>
-            <div class="stadeAndGamers">
-                <div class="stade">
-                    <div class="furst-formation" id="furst-formation">
-                        <div class="furst-formation-forward">
-                            <div class="forward" id="forward-left"><button>➕</button></div>
-                            <div class="forward" id="forward-center"><button>➕</button></div>
-                            <div class="forward" id="forward-right"><button>➕</button></div>
-                            <div class="center" id="center-left"><button>➕</button></div>
-                            <div class="center" id="center-center"><button>➕</button></div>
-                            <div class="center" id="center-right"><button>➕</button></div>
-                        </div>
-
-                        <div class="furst-formation-deffence">
-                            <div class="deffence" id="deffence-left"><button>➕</button></div>
-                            <div class="deffence" id="deffence-left-center"><button>➕</button></div>
-                            <div class="deffence" id="deffence-right-center"><button>➕</button></div>
-                            <div class="deffence" id="deffence-right"><button>➕</button></div>
-
-                        </div>
-                        <div class="gardien">
-                            <div class="deffence" id="gardien"><button>➕</button></div>
-                        </div>
+            <div class="stade">
+                <div class="furst-formation" id="furst-formation">
+                    <div class="furst-formation-forward">
+                        <div class="forward joueur" id="forward-left"></div>
+                        <div class="forward joueur" id="forward-center"></div>
+                        <div class="forward joueur" id="forward-right"></div>
+                        <div class=" center joueur" id="center-left"></div>
+                        <div class=" center joueur" id="center-center"></div>
+                        <div class=" center joueur" id="center-right"></div>
                     </div>
 
+                    <div class="furst-formation-deffence">
+                        <div class="deffence joueur" id="deffence-left"></div>
+                        <div class="deffence joueur" id="deffence-left-center"></div>
+                        <div class="deffence joueur" id="deffence-right-center"></div>
+                        <div class="deffence joueur" id="deffence-right"></div>
 
+                    </div>
+                    <div class="gardien">
+                        <div class="deffence joueur" id="gardien"></div>
+                    </div>
                 </div>
-                <div class="gamer">
-                    <div id="player-list"></div>
-                    <div id="player-cards" class="player-cards-container"></div>        
-                </div>
+
+
             </div>
+            <div class="gamer">
+                <div id="player-list"></div>
+                <div id="player-cards" class="player-cards-container"></div>
+            </div>
+        </div>
+        <!-- <div id="player-list"></div>
+            <div id="player-cards" class="player-cards-container"></div> -->
+        </div>
+        <div class="input-player-to-make">
             <div class="player-form">
                 <input type="text" id="player-name" placeholder="Nom du joueur" required>
                 <input type="text" id="player-position" placeholder="Position" required>
-                <input type="number" id="player-stats" placeholder="Statistiques" required>
-
+                <input type="text" id="player-image" placeholder="URL image" required>
+                <input type="text" id="player-country" placeholder="URL Country (flag)" required>
+                <input type="text" id="player-club" placeholder="URL Club (logo)" required>
+                <!-- <input type="number" id="player-stats" placeholder="Statistiques" required> -->
+                <input type="number" id="player-cf" placeholder="CF" required>
+                <input type="number" id="player-pac" placeholder="PAC" required>
+                <input type="number" id="player-sho" placeholder="SHO" required>
+                <input type="number" id="player-pas" placeholder="PAS" required>
+                <input type="number" id="player-dri" placeholder="DRI" required>
+                <input type="number" id="player-def" placeholder="DEF" required>
+                <input type="number" id="player-phy" placeholder="PHY" required>
                 <button id="add-player-btn">Ajouter Joueur</button>
             </div>
-            <!-- <div id="player-list"></div>
-            <div id="player-cards" class="player-cards-container"></div> -->
         </div>
     </section>
+
+
 
 
     <!-- <select name="" id="">
