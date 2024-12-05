@@ -30,18 +30,18 @@ document.getElementById("furst-btn-formation").addEventListener("click", functio
 });
 
 document.getElementById("add-player-btn").addEventListener("click", function () {
-    const name = document.getElementById("player-name").value.toUpperCase(0);
+    const name     = document.getElementById("player-name").value.toUpperCase(0);
     const position = document.getElementById("player-position").value;
-    const image = document.getElementById("player-image").value;
-    const cf = document.getElementById("player-cf").value;
-    const pac = document.getElementById("player-pac").value;
-    const sho = document.getElementById("player-sho").value;
-    const pas = document.getElementById("player-pas").value;
-    const dri = document.getElementById("player-dri").value;
-    const def = document.getElementById("player-def").value;
-    const phy = document.getElementById("player-phy").value;
-    const country = document.getElementById("player-country").value;
-    const club = document.getElementById("player-club").value;
+    const image    = document.getElementById("player-image").value;
+    const cf       = document.getElementById("player-cf").value;
+    const pac      = document.getElementById("player-pac").value;
+    const sho      = document.getElementById("player-sho").value;
+    const pas      = document.getElementById("player-pas").value;
+    const dri      = document.getElementById("player-dri").value;
+    const def      = document.getElementById("player-def").value;
+    const phy      = document.getElementById("player-phy").value;
+    const country  = document.getElementById("player-country").value;
+    const club     = document.getElementById("player-club").value;
 
     const playerList = document.getElementById("player-list");
     const currentPlayers = playerList.children.length;
@@ -56,6 +56,7 @@ document.getElementById("add-player-btn").addEventListener("click", function () 
         playerDiv.innerHTML = `${name} - ${position} - CF: ${cf} - PAC: ${pac} - SHO: ${sho} - PAS: ${pas} - DRI: ${dri} - DEF: ${def} - PHY: ${phy} <button class="remove-player-btn">Supprimer</button>`;
         playerList.appendChild(playerDiv);
 
+        // nsan3o carte dyal joueur
         const playerCard = document.createElement("div");
         playerCard.className = "player-card";
         playerCard.innerHTML = `
@@ -108,21 +109,24 @@ document.getElementById("add-player-btn").addEventListener("click", function () 
 
         document.getElementById("player-cards").appendChild(playerCard);
 
+        // nmasho linput 
         document.getElementById("player-name").value = '';
-        document.getElementById("player-position").value = '';
-        document.getElementById("player-image").value = '';
-        document.getElementById("player-cf").value = '';
-        document.getElementById("player-pac").value = '';
-        document.getElementById("player-sho").value = '';
-        document.getElementById("player-pas").value = '';
-        document.getElementById("player-dri").value = '';
-        document.getElementById("player-def").value = '';
-        document.getElementById("player-phy").value = '';
-        document.getElementById("player-country").value = '';
-        document.getElementById("player-club").value = '';
+        document.getElementById("player-position").value = '' ;
+        // document.getElementById("player-stats").value = '' ;
+        document.getElementById("player-image").value  = '' ;
+        document.getElementById("player-cf").value     = '' ;
+        document.getElementById("player-pac").value    = '' ;
+        document.getElementById("player-sho").value    = '' ;
+        document.getElementById("player-pas").value    = '' ;
+        document.getElementById("player-dri").value    = '' ;
+        document.getElementById("player-def").value    = '' ;
+        document.getElementById("player-phy").value    = '' ;
+        document.getElementById("player-country").value= '' ;
+        document.getElementById("player-club").value   = '' ;
 
         playerDiv.querySelector(".remove-player-btn").addEventListener("click", function () {
             playerList.removeChild(playerDiv);
+
             document.getElementById("player-cards").removeChild(playerCard);
         });
     } else {
@@ -133,12 +137,12 @@ document.getElementById("add-player-btn").addEventListener("click", function () 
 
 
 let joueurs = document.querySelectorAll(".joueur");
-let selectionJoueur = null;
+let selectionJoueur =null;
 // syntax: array.foreach(function(element,index,array))
-joueurs.forEach(function (joueur) {
-    joueur.addEventListener("click", function () {
-        joueur.style.backgroundColor = "yellow";
-        selectionJoueur = joueur;
+joueurs.forEach(function(joueur){
+    joueur.addEventListener("click",function(){
+        joueur.style.backgroundColor="yellow";
+        selectionJoueur=joueur;
     })
 
 })
@@ -147,14 +151,14 @@ joueurs.forEach(function (joueur) {
 
 let cards = document.getElementById("player-cards");
 
-cards.addEventListener("click", function () {
+cards.addEventListener("click",function(){
 
     const card = event.target.closest(".player-card");
-    if (!card)
+    if(!card)
         return;
-    else if (selectionJoueur) {
+    else if(selectionJoueur){
         selectionJoueur.appendChild(card);
-        selectionJoueur = null;
+        selectionJoueur=null;
     }
 
 })
